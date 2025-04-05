@@ -1,0 +1,197 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@Html.Action("PartialHead", "Default")
+
+<body>
+
+    <!-- ======= Top Bar ======= -->
+    @Html.Action("PartialTop", "Default")
+
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-cente">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+            <h1 class="logo me-auto me-lg-0"><a href="index.html">RAIN </a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            @Html.Action("PartialNavbar","Default")<!-- .navbar -->
+            <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Rezervasyon Oluştur</a>
+
+        </div>
+    </header><!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    @Html.Action("PartialFeature","Default")<!-- End Hero -->
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    @Html.Action("PartialAbout", "Default") <!-- End About Section -->
+    <!-- ======= Why Us Section ======= -->
+    @Html.Action("PartialService", "Default") <!-- End Why Us Section -->
+    <!-- ======= Menu Section ======= -->
+    @Html.Action("PartialMenu", "Default") <!-- End Menu Section -->
+    <!-- ======= Specials Section ======= -->
+    @Html.Action("PartialSpecial", "Default")<!-- End Specials Section -->
+    <!-- ======= Events Section ======= -->
+    @Html.Action("PartialEvent", "Default")<!-- End  Events Section -->
+    <!-- ======= Book A Table Section ======= -->
+    @Html.Action("PartialBook", "Default")<!-- End Book A Table Section -->
+    <!-- ======= Testimonials Section ======= -->
+    @Html.Action("PartialTestimonial", "Default")<!-- End Testimonials Section -->
+    <!-- ======= Chefs Section ======= -->
+    @Html.Action("PartialChefs", "Default")<!-- End Chefs Section -->
+    
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>İletişim</h2>
+                <p>Konumumuz</p>
+            </div>
+        </div>
+
+        <div data-aos="fade-up">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12034.627693840079!2d29.018802765123564!3d41.05463104150159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7cb58883451%3A0x41cdb323256c259c!2zT3J0YWvDtnksIEJlxZ9pa3RhxZ8vxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1743851590871!5m2!1str!2str" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        <div class="container" data-aos="fade-up">
+
+            <div class="row mt-5">
+
+                <div class="col-lg-4">
+                    <div class="info">
+                        <div class="address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4>Konum:</h4>
+                            <p> Beşiktaş, İstanbul</p>
+                        </div>
+
+                        <div class="open-hours">
+                            <i class="bi bi-clock"></i>
+                            <h4>Saatlerimiz:</h4>
+                            <p>
+                                Pazartesi-Cumartesi:<br>
+                                09:00-22:00 -- 10:00-23:00
+                            </p>
+                        </div>
+
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>iletisim@rain.com</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="bi bi-phone"></i>
+                            <h4>Telefon:</h4>
+                            <p>(0212) 220 77 33</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                @Html.Action("PartialContact", "Default")
+
+
+            </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info">
+                            <h3>Restaurantly</h3>
+                            <p>
+                                Beşiktaş, İstanbul <br>
+
+                                <strong>Telefon:</strong> (0212) 220 77 33<br>
+                                <strong>Email:</strong> iletisim@rain.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Linkler</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Ana Sayfa</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Hakkımızda</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Menü</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Etkinlikler</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Şefler</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Etkinlikler</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Gurme Tadım Gecesi</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Canlı Müzik ve DJ Performansı</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Özel Davetler ve Kurumsal Organizasyonlar</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Haber Bültenimize Üye Olun</h4>
+                        <p>Özel Etkinliklerimizden anlık haberdar olmak için bültenimize üye olun</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Abone Ol">
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Rain</span></strong>. Tüm Hakları Saklıdır
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="~/Template/Restaurantly/assets/vendor/aos/aos.js"></script>
+    <script src="~/Template/Restaurantly/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Template/Restaurantly/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/Template/Restaurantly/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/Template/Restaurantly/assets/vendor/php-email-form/validate.js"></script>
+    <script src="~/Template/Restaurantly/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/Template/Restaurantly/assets/js/main.js"></script>
+
+</body>
+
+</html>

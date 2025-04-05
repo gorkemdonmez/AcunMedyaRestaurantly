@@ -1,0 +1,41 @@
+﻿﻿@model Restaurantly.AcunMedya.Entities.Adres
+
+@{
+    ViewBag.Title = "AddAdress";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row page-titles mx-0">
+    <div class="col p-md-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Anasayfa</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Adres Ekle</a></li>
+        </ol>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Adres Ekle</h4>
+                <div class="basic-form">
+                    <form method="post">
+
+                        <div class="form-group">
+                            <label>Konum</label>
+                            @Html.TextBoxFor(x => x.Location, new { @class = "form-control" })
+                            <label>Saatler</label>
+                            @Html.TextBoxFor(x => x.OpenHours, new { @class = "form-control" })
+                            <label>Mail</label>
+                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+                            <label>Telefon</label>
+                            @Html.TextBoxFor(x => x.Call, new { @class = "form-control" })
+                        </div>
+
+                        <button type="submit" class="btn btn-dark gradient-2">Adres Ekle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

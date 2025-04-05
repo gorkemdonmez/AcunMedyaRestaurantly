@@ -1,0 +1,33 @@
+﻿@model List<Restaurantly.AcunMedya.Entities.Gallery>
+
+<section id="gallery" class="gallery">
+
+    <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2>Rain'de Görseller</h2>
+            <p>Misafirlerimizden Görseller</p>
+        </div>
+    </div>
+
+    <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+            @foreach ( var item in Model)
+            {       <div class="col-lg-3 col-md-4">
+                  <div class="gallery-item">
+                    <a href="https://viemagazine.com/wp-content/uploads/2018/03/vie-magazine-culinary-cocktail-recipes-hero-min.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                   <img src="https://viemagazine.com/wp-content/uploads/2018/03/vie-magazine-culinary-cocktail-recipes-hero-min.jpg" alt="" class="img-fluid">
+                    </a>
+                        </div>
+                        </div>
+
+            }
+
+            
+
+            
+
+        </div>
+
+    </div>
+</section>

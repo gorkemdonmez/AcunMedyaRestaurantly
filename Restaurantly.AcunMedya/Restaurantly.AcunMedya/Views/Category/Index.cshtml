@@ -1,0 +1,33 @@
+﻿@model List<Restaurantly.AcunMedya.Entities.Category>
+@{
+    Layout = null;
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<h2>Kategori Listesi</h2>
+<div class="container">
+<table class="table-responsive">
+
+    <tr>
+
+        <th>
+            #
+        </th>
+        <th>Kategori İsmi</th>
+    </tr>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+
+                <td>@item.CategoryId</td>
+                <td>@item.CategoryName</td>
+
+            </tr>
+
+        }
+    </tbody>
+
+</table>
+</div>
